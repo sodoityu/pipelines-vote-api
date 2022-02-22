@@ -14,6 +14,7 @@ spec:
       labels:
         app: pipelines-vote-api
     spec:
+      runtimeClassName: kata
       containers:
         - image: quay.io/openshift-pipeline/vote-api:latest
           imagePullPolicy: Always
